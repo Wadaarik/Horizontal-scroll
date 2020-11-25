@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Horizontal Scroll</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block block-1">
+            <h1>Wagon.</h1>
+        </div>
+        <div class="block block-2">
+            <h1>Station.</h1>
+        </div>
+        <div class="block block-3">
+            <h1>Escalator.</h1>
+        </div>
+        <div class="block block-4">
+            <h1>Train.</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var blocks = document.getElementsByClassName('block');
+        var container = document.getElementsByClassName('container');
+        var hs = new HorizontalScroll.default({
+            blocks : blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.5,
+        });
+    </script>
+</body>
+</html>
